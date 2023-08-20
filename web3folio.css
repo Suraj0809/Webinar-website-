@@ -1,0 +1,1029 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-family: 'Roboto', 'Droid Sans', Avenir, Segoe UI, Helvetica Neue, sans-serif;
+    width: 100%;
+}
+
+body,
+html {
+    color: rgba(0, 0, 0, .75);
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    overflow-x: visible !important;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 18px;
+    height: 100%;
+    line-height: 1.6;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.shado-banner {
+    -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .35), 0 1px 5px -2px rgba(0, 0, 0, .35), 0 1px 8px -1px rgba(0, 0, 0, .25);
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .35), 0 1px 5px -2px rgba(0, 0, 0, .35), 0 1px 8px -1px rgba(0, 0, 0, .25);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.a {
+    text-align: right;
+    color: yellowgreen
+}
+
+.spacer {
+    -ms-flex-positive: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    width: 100%;
+    height: 100px;
+}
+
+/****
+	*	FIRST BOX
+	**/
+#left-flex .ribbon * {
+    position: relative;
+}
+
+#left-flex .ribbon:before {
+    background-color: rgba(20, 30, 50, .9);
+    content: '';
+    display: block;
+    height: 525px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#left-flex .ribbon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    background: url('https://cdn2.hubspot.net/hubfs/3218524/banners/phone-woman.jpg') center center / cover no-repeat fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 725px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#left-flex .title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 1040px;
+    min-width: 200px;
+    padding: 0;
+    text-align: left;
+    width: 88%;
+}
+
+#left-flex .title-wrapper>* {
+    color: #f2f2f2;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#left-flex h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+#left-flex p {
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width:629px) {
+    #left-flex .title-wrapper {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    #left-flex #title-wrapper h1 {
+        font-size: 2.75rem;
+    }
+
+    #left-flex p {
+        font-size: 1.4rem;
+    }
+}
+
+/****
+	*	SECOND BOX
+	**/
+#fixed-bg .title-wrapper * {
+    position: relative;
+}
+
+#fixed-bg .title-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(https://cdn2.hubspot.net/hubfs/3218524/banners/phone-woman.jpg) center bottom / cover no-repeat fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: middle;
+    width: 100%;
+    z-index: -1;
+}
+
+#fixed-bg .title-wrapper:before {
+    background-color: rgba(72, 111, 230, .9);
+    content: " ";
+    display: block;
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#fixed-bg h1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #f6f6f6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+    font-size: 3.25em;
+    font-weight: 300;
+    height: 83%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 750px;
+    min-width: 240px;
+    text-align: center;
+    width: 90%;
+    line-height: 1.1;
+}
+
+@media only screen and (max-width:649px) {
+    #fixed-bg h1 {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+}
+
+@media only screen and (max-width:649px) and (min-width:530px) {
+    #fixed-bg h1 {
+        font-size: 2.8em;
+    }
+}
+
+@media only screen and (max-width:529px) {
+    #fixed-bg h1 {
+        font-size: 2.4em;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+/****
+	*	THIRD BOX
+	**/
+#title-outlined .ribbon * {
+    position: relative;
+}
+
+#title-outlined .ribbon:before {
+    background: linear-gradient(110deg, rgba(225, 151, 19, .5) -30%, rgba(159, 91, 118, .9) 44%, rgba(130, 111, 203, .9) 105%);
+    content: " ";
+    display: block;
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#title-outlined .ribbon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url('https://cdn2.hubspot.net/hubfs/3218524/banners/mdl.min.svg') left center / cover no-repeat scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+    height: 400px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    margin: 0;
+    vertical-align: middle;
+    width: 100%;
+    z-index: -1;
+}
+
+#title-outlined h1 {
+    border-top: 3px solid #f5f5f5;
+    border-bottom: 3px solid #f5f5f5;
+    color: #f5f5f5;
+    display: inline-block;
+    float: none;
+    font-size: 3.5rem;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: -.02em;
+    line-height: 1.2;
+    padding: 15px;
+    text-align: center;
+    text-shadow: 1px 0px 1px rgba(0, 0, 0, .45);
+    width: 80%;
+}
+
+@media only screen and (max-width:649px) {
+    #title-outlined h1 {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 3rem;
+        width: 88%;
+    }
+}
+
+@media only screen and (max-width:529px) {
+    #title-outlined h1 {
+        font-size: 2.5rem;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+/****
+	*	FOURTH BOX
+	**/
+#transparent-overlay .overlay * {
+    position: relative;
+}
+
+#transparent-overlay .overlay {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    background: url('https://cdn2.hubspot.net/hubfs/3218524/banners/mdl-airplane.jpg') 65% center / cover no-repeat scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#transparent-overlay .title-wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(250, 251, 252, .77);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 880px;
+    width: 73%;
+}
+
+#transparent-overlay .title-wrapper h2 {
+    color: #4e70c1;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 1.3;
+    max-width: 780px;
+    padding: 25px 15px;
+    text-align: center;
+    width: 80%;
+}
+
+@media only screen and (max-width:519px) {
+    #transparent-overlay .title-wrapper {
+        width: 97%;
+    }
+
+    #transparent-overlay .title-wrapper h2 {
+        font-size: 32px;
+    }
+}
+
+/****
+	*	FIFTH BOX
+	**/
+#skewed .overlay * {
+    position: relative;
+}
+
+#skewed {
+    height: 650px;
+    overflow: hidden;
+    -webkit-transform: skewY(0deg) translateY(0);
+    transform: skewY(0deg) translateY(0);
+    width: 100%;
+}
+
+#skewed .overlay:before {
+    background: linear-gradient(-182deg, rgba(121, 50, 116, .9) 5%, rgba(41, 80, 156, .85) 100%);
+    content: "";
+    display: block;
+    height: 600px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#skewed .overlay {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: url(https://cdn2.hubspot.net/hubfs/3218524/banners/mdl-airplane.jpg) center center / cover no-repeat scroll;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 600px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: skewY(-4deg) translateY(-8%);
+    transform: skewY(-4deg) translateY(-8%);
+    z-index: -1;
+}
+
+#skewed h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 0 auto;
+    text-align: center;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: skewY(4deg) translateY(8%);
+    transform: skewY(4deg) translateY(8%);
+    width: 77%;
+}
+
+@media only screen and (max-width:849px) {
+    #skewed h1 {
+        font-size: 3rem;
+    }
+}
+
+/****
+	*	SIXTH BOX
+	**/
+#simple-gradient .blue-overlay * {
+    position: relative;
+}
+
+#simple-gradient .blue-overlay:before {
+    background: linear-gradient(125deg, rgba(129, 150, 174, .9) -30%, rgba(29, 50, 74, .8) 40%, rgba(4, 9, 14, .6) 100%);
+    content: "";
+    display: block;
+    height: 400px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#simple-gradient .blue-overlay {
+    background: url('https://cdn2.hubspot.net/hubfs/3218524/banners/mdl-banner.jpg') center center / cover no-repeat scroll;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    left: 0;
+    position: relative;
+    z-index: -1;
+}
+
+#simple-gradient h1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: none;
+    font-size: 3.5rem;
+    font-weight: 300;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1.2;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    width: 90%;
+}
+
+@media only screen and (max-width:849px) {
+    #simple-gradient h1 {
+        font-size: 3rem;
+        width: 77%;
+    }
+}
+
+#left-flex1 .ribbon * {
+    position: relative;
+}
+
+#left-flex1 .ribbon:before {
+    background-color: rgba(193, 209, 239, 0.9);
+    content: '';
+    display: block;
+    height: 525px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+#left-flex1 .ribbon {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    background: url('https: //i0.wp.com/boingboing.net/wp-content/uploads/2018/05/cool-background1.png?fit=1192%2C600&ssl=1') center center / cover no-repeat fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 525px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#left-flex1 .title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 1040px;
+    min-width: 200px;
+    padding: 0;
+    text-align: left;
+    width: 88%;
+}
+
+#left-flex1 .title-wrapper>* {
+    color: #f2f2f2;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#left-flex1 h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+#left-flex1 p {
+    font-size: 1.75rem;
+}
+
+@media only screen and (max-width:629px) {
+    #left-flex .title-wrapper {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    #left-flex1 #title-wrapper h1 {
+        font-size: 2.75rem;
+    }
+
+    #left-flex1 p {
+        font-size: 1.4rem;
+    }
+}
+
+a:hover {
+    color: #b6cbce;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+
+.social-icons {}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #033f47;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+
+#contact .form-control {
+    background-color: #033f47;
+    border-color: #033f47;
+    color: #b6cbce;
+}
+
+#contact .form-control:focus {
+    border-color: #e0f780;
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder {
+    color: #b6cbce;
+}
+
+#contact input.form-control {
+    height: 44px;
+}
+
+span {
+    color: #f97000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #2C4A64;
+}
+
+.main {
+    height: 100vh;
+    background-size: cover;
+    background: url('') no-repeat top center;
+}
+
+.mano {
+    height: 100vh;
+    background-size: cover;
+    background: url('https: //hips.hearstapps.com/hmg-prod/images/2023-chevrolet-corvette-z06-002-6459269952a63.jpg') no-repeat top center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.countdown>div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.number {
+    font-weight: 500;
+    font-size: 44px;
+    color: #CAA78C;
+}
+
+div span:last-of-type {
+    font-size: 12px;
+}
+
+
+
+
+
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .countdown>div {
+        background-color: #261515;
+        width: 250px;
+        height: 60px;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    div span:last-of-type {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .number {
+        font-size: 34px;
+    }
+}
+
+.k {
+    color: rgb(185, 211, 215)
+}
+
+body {
+    background-color: rgb(10, 7, 12);
+}
+
+.layout {
+    width: 600px;
+    margin: auto;
+}
+
+.accordion {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(105, 206, 105);
+    border-radius: 10px;
+}
+
+.accordion__question p {
+    margin: 5px;
+    padding: 0;
+    font-family: Verdana;
+    font-size: 20px;
+}
+
+.accordion__answer p {
+    margin: 5px;
+    padding: 10px;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    background: rgb(82, 98, 170);
+    border-radius: 10px;
+}
+
+.accordion:hover {
+    cursor: pointer;
+}
+
+.accordion__answer {
+    display: none;
+}
+
+.accordion.active .accordion__answer {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #eef3db;
+    font-weight: 700;
+}
+
+body {
+    background-color: #020214;
+    color: #b6cbce;
+}
+
+.navbar {
+    background-color: #7642ae;
+    min-height: 20px;
+    width: auto;
+    background: linear-gradient(rgba(80, 151, 160, 0.8), rgba(3, 63, 71, 0.8));
+    background-image: url("./image/sidebar-img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar .nav-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.navbar .nav-link:hover {
+    color: #b2560f;
+}
+
+.navbar .nav-link.active {
+    color: var(--color-brand);
+}
+
+.color1 {
+    color: #eef3db;
+    width: 200px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 rgb(202, 126, 27);
+}
+
+
+.size {
+    width: 14px;
+    height: 14px;
+    border-radius: 80px;
+}
+
+.bg-base {
+    background-color: var(--color-base);
+}
+
+
+.full-height {
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-brand {
+    color: #e0f780;
+}
+
+
+.btn {
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: #e0f780;
+    border-color: #e0f780;
+    color: #033f47;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: #0000;
+    color: #eef3db;
+    border-color: #0000;
+}
+
+a {
+    text-decoration: none;
+    color: #b6cbce;
+    transition: all 0.4s ease;
+}
+
+a:hover {
+    color: #b6cbce;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+}
+
+
+.social-icons {}
+
+.social-icons a {
+    width: 4px;
+    height: 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #041011;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.m {
+    color: cornflowerblue
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #05091d;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration_form {
+    background: #545871;
+    padding: 25px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.registration_form .title {
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ebd0ce;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.form_wrap {
+    margin-top: 35px;
+}
+
+.form_wrap .input_wrap {
+    margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child {
+    margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label {
+    display: block;
+    margin-bottom: 3px;
+    color: #9597a6;
+}
+
+.form_wrap .input_grp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_wrap .input_grp input[type="text"] {
+    width: 165px;
+}
+
+.form_wrap input[type="text"] {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #9597a6;
+    padding: 10px;
+    outline: none;
+}
+
+.form_wrap input[type="text"]:focus {
+    border-color: #ebd0ce;
+}
+
+.form_wrap ul {
+    background: #fff;
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.form_wrap ul li:first-child {
+    margin-right: 15px;
+}
+
+.form_wrap ul .radio_wrap {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.form_wrap ul .radio_wrap .input_radio {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.form_wrap ul .radio_wrap span {
+    display: inline-block;
+    font-size: 14px;
+    padding: 3px 20px;
+    border-radius: 3px;
+    color: #545871;
+}
+
+.form_wrap .input_radio:checked~span {
+    background: #ebd0ce;
+}
+
+.form_wrap .submit_btn {
+    width: 100%;
+    background: #ebd0ce;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.form_wrap .submit_btn:hover {
+    background: #ffd5d2;
+}
+
+.v {
+    color: #ba3d3d93 text-align:center;
+}
